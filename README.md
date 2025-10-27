@@ -1,69 +1,86 @@
-# The Walking Dead (C)
+# 💀 The Walking Dead - Jogo em C
 
-**Jogo simples em C — versão de terminal**
-
-Um pequeno jogo estilo "Escape" feito em C. Você controla o personagem **Rick (R)** em um mapa 10×10 e precisa alcançar a **Saída (S)**. Pelo caminho há zumbis (Z), carros (C), árvores (A), pedras (P) e balas (B). O jogador pode coletar balas para matar zumbis — sem balas, encontrar um zumbi resultará na morte do seu personagem e o jogo terminará.
+Um jogo de sobrevivência inspirado em **The Walking Dead**, desenvolvido em **C**.  
+Controle o **Rick** em um mundo cheio de zumbis, colete balas, desvie de obstáculos e encontre a saída para sobreviver! 🧟‍♂️🔫  
 
 ---
 
-## Como compilar
+## 🎮 Como jogar
 
-Recomendo usar o `gcc` para compilar no Linux, macOS ou WSL no Windows:
+O objetivo é guiar o personagem `R` (Rick) até a saída `S` sem morrer para os zumbis.  
+O cenário é gerado aleatoriamente a cada partida!
+
+Durante o jogo, você encontrará:
+
+| Símbolo | Significado |
+|:--------:|:-------------|
+| `R` | Rick (você) |
+| `Z` | Zumbi — se encostar sem balas, você morre |
+| `B` | Bala — aumenta sua munição |
+| `C` | Carro — bloqueia o caminho |
+| `A` | Árvore — bloqueia o caminho |
+| `P` | Pedra — bloqueia o caminho |
+| `_` | Espaço livre |
+| `S` | Saída do mapa |
+
+---
+
+## ⌨️ Controles
+
+Use as teclas abaixo para se mover:
+
+W → mover para cima
+S → mover para baixo
+A → mover para a esquerda
+D → mover para a direita
+
+
+---
+
+## 🧠 Regras do jogo
+
+1. **Colete balas (`B`)** para poder enfrentar os zumbis (`Z`);  
+2. **Sem balas = morte instantânea** se encontrar um zumbi;  
+3. **Carros (`C`), árvores (`A`) e pedras (`P`)** são obstáculos — não dá pra passar por eles;  
+4. Alcance a **saída (`S`)** para vencer o jogo;  
+5. Cada jogada gera um novo mapa aleatório!  
+
+---
+
+## 🧰 Como compilar e executar
+
+No terminal, use os comandos:
 
 ```bash
 gcc The.Walking_Dead.c -o walking_dead
-```
-
-Se preferir, compile com flags para avisos e padrão C mais recente:
-
-```bash
-gcc -Wall -Wextra -std=c11 The.Walking_Dead.c -o walking_dead
-```
-
----
-
-## Como executar
-
-No terminal, execute:
-
-```bash
 ./walking_dead
-```
 
-(No Windows, rode `walking_dead.exe`.)
+📸 Exemplo de execução
+_ _ Z _ C _ A _ _ _
+_ _ _ _ _ _ _ _ _ _
+_ _ _ _ P _ Z _ _ _
+_ _ _ B _ _ _ Z _ _
+_ A _ Z _ P _ A _ _
+_ _ C _ _ _ _ _ _ Z
+_ _ _ _ _ _ Z _ _ _
+_ _ _ _ _ _ _ S _ _
+_ _ _ _ _ _ _ _ _ _
+_ _ _ R _ _ _ _ _ _
 
----
+Mova o Rick (w = cima, s = baixo, a = esquerda, d = direita):
+🏁 Objetivo final
 
-## Controles
+Chegar até a saída (S) com vida!
+Se Rick for cercado ou ficar sem balas, o jogo termina com:
+Rick foi atacado, fim de jogo!!
+Se sobreviver, verá:
+Parabéns, Rick encontrou a saída!!
 
-* `w` ou `W` — mover para cima
-* `s` ou `S` — mover para baixo
-* `a` ou `A` — mover para a esquerda
-* `d` ou `D` — mover para a direita
+👩‍💻 Autores
 
-Digite a tecla e pressione Enter quando for solicitado.
+Projeto desenvolvido por:
+Giovanna Costa da Silva
+Caio Vinícius Marinho
 
----
-
-## Objetivo e regras
-
-* Alcance a saída `S` para vencer.
-* Coletar `B` (balas) aumenta seu contador de munição.
-* Ao encontrar `Z` (zumbi):
-
-  * Se tiver bala(s), o zumbi é eliminado e uma bala é consumida.
-  * Se não tiver balas, o jogo termina imediatamente.
-* Outros caracteres:
-
-  * `_` — espaço livre
-  * `C` — carro (obstáculo)
-  * `A` — árvore (obstáculo)
-  * `P` — pedra (obstáculo)
-
-
-## Créditos
-
-* **Autores:** Giovanna Costa da Silva, Caio Vinícius Marinho
-* **Arquivo do jogo:** `The.Walking_Dead.c`
-
+Feito para praticar lógica de programação e uso de matrizes em C, com foco em aleatoriedade, colisão e movimentação no mapa.
 
