@@ -68,19 +68,7 @@ _ _ _ _ _ _ _ _ _ _
 _ _ _ R _ _ _ _ _ _
 
 Mova o Rick (w = cima, s = baixo, a = esquerda, d = direita):
-🏁 Objetivo final
 
-Chegar até a saída (S) com vida!
-Se Rick for cercado ou ficar sem balas, o jogo termina com:
-Rick foi atacado, fim de jogo!!
-Se sobreviver, verá:
-Parabéns, Rick encontrou a saída!!
 
-👩‍💻 Autores
 
-Projeto desenvolvido por:
-Giovanna Costa da Silva
-Caio Vinícius Marinho
-
-Feito para praticar lógica de programação e uso de matrizes em C, com foco em aleatoriedade, colisão e movimentação no mapa.
 
