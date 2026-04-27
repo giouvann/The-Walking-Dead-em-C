@@ -1,11 +1,11 @@
-# 💀 The Walking Dead - Jogo em C
+# The Walking Dead - Jogo em C
 
 Um jogo de sobrevivência inspirado em **The Walking Dead**, desenvolvido em **C**.  
-Controle o **Rick** em um mundo cheio de zumbis, colete balas, desvie de obstáculos e encontre a saída para sobreviver! 🧟‍♂️🔫  
+Controle o **Rick** em um mundo cheio de zumbis, colete balas, desvie de obstáculos e encontre a saída para sobreviver!   
 
 ---
 
-## 🎮 Como jogar
+## Como jogar
 
 O objetivo é guiar o personagem `R` (Rick) até a saída `S` sem morrer para os zumbis.  
 O cenário é gerado aleatoriamente a cada partida!
@@ -25,7 +25,7 @@ Durante o jogo, você encontrará:
 
 ---
 
-## ⌨️ Controles
+## Controles
 
 Use as teclas abaixo para se mover:
 
@@ -37,7 +37,7 @@ D → mover para a direita
 
 ---
 
-## 🧠 Regras do jogo
+## Regras do jogo
 
 1. **Colete balas (`B`)** para poder enfrentar os zumbis (`Z`);  
 2. **Sem balas = morte instantânea** se encontrar um zumbi;  
@@ -47,7 +47,7 @@ D → mover para a direita
 
 ---
 
-## 🧰 Como compilar e executar
+## Como compilar e executar
 
 No terminal, use os comandos:
 
@@ -57,7 +57,7 @@ gcc The.Walking_Dead.c -o walking_dead
 
 ---
 
-## 🗺️ Exemplo de mapa em execução
+## Exemplo de mapa em execução
 
 Ao iniciar o jogo, um mapa é gerado aleatoriamente.
 Abaixo está um exemplo visual de como o cenário pode aparecer no terminal:
@@ -78,7 +78,7 @@ Abaixo está um exemplo visual de como o cenário pode aparecer no terminal:
 
 ---
 
-## 👩‍💻 Autores
+## Autores
 
 Projeto desenvolvido por:
 Giovanna Costa da Silva
