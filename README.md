@@ -47,21 +47,11 @@ D → mover para a direita
 
 ---
 
-## Como compilar e executar
-
-No terminal, use os comandos:
-
-```bash
-gcc The.Walking_Dead.c -o walking_dead
-./walking_dead
-
----
-
 ## Exemplo de mapa em execução
-
 Ao iniciar o jogo, um mapa é gerado aleatoriamente.
 Abaixo está um exemplo visual de como o cenário pode aparecer no terminal:
 
+```bash
  _ _ _ _ _ _ _ _ _ _
  _ _ Z _ _ _ _ _ _ _
  _ _ _ _ A _ _ _ _ _
@@ -73,13 +63,12 @@ Abaixo está um exemplo visual de como o cenário pode aparecer no terminal:
  _ _ _ _ _ _ _ _ _ S
  _ _ _ _ _ _ _ _ _ _
 
+````
 
-💡 Dica: Cada vez que você joga, o mapa muda completamente — novos obstáculos, novas posições e novos desafios!
+Dica: Cada vez que você joga, o mapa muda completamente — novos obstáculos, novas posições e novos desafios são gerados!
 
----
 
 ## Autores
-
 Projeto desenvolvido por:
 Giovanna Costa da Silva
 Caio Vinícius Marinho
